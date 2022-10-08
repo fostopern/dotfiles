@@ -61,9 +61,12 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/bash", "-c", cmd, NULL } }
 
 /* commands */
+#include <X11/XF86keysym.h>
 static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-
+static const char *upvol[] = {"amixer", "-q", "sset", "Master", "5%+", NULL };
+static const char *downvol[] = {"amixer", "-q", "sset", "Master", "5%-", NULL };
+static const char *togglevol[] = {"amixer", "-q", "sset", "Master", "toggle", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
@@ -91,7 +94,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_1,                      0)
+    { 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol }  },
+    { 0,                       XF86XK_AudioMute, spawn, {.v = togglevol }  },
+    { 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   }  },
+    TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
 	TAGKEYS(                        XK_4,                      3)
