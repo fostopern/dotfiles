@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/graphql-doc.el/graphql-doc.el

@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/elisp-tree-sitter/lisp/tree-sitter-load.el

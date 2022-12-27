@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/emacs-fish-completion/fish-completion.el

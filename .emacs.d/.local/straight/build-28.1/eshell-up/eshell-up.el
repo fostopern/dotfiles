@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/eshell-up/eshell-up.el

@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/emacs-promise/promise-es6-extensions.el

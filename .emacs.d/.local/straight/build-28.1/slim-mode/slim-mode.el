@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/emacs-slim/slim-mode.el

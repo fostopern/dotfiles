@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/evil-terminal-cursor-changer/evil-terminal-cursor-changer.el
