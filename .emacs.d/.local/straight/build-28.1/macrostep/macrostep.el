@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/macrostep/macrostep.el

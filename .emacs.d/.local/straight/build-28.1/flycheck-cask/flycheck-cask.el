@@ -1,0 +1,1 @@
+/home/fosto/.emacs.d/.local/straight/repos/flycheck-cask/flycheck-cask.el
